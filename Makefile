@@ -635,3 +635,7 @@ BUILD_DATE := NA
 endif
 
 include $(ROOT_DIR)/testlist.mk
+
+
+nix-flash:
+	nix-shell shell.nix --run 'make clean hotdox:gnzh:dfu'
